@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(241, 241, 246, 0.885);
+
+  li {
+    list-style: none;
+  }
+}
+.services {
+  margin-bottom: 20px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.btn_min_add {
+  padding: 10px;
+  border-radius: 5px;
+}
+.date-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.meal-options {
+  margin-bottom: 20px;
+}
+.meal-options button {
+  padding: 10px;
+  margin: 0 5px;
+}
+.continue {
+  background-color: #ccc;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.contact {
+  margin-top: 20px;
+}

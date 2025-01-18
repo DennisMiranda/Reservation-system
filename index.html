@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas en Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Reserve en RESTAURANTE.</h2>
+        <p>Direccion de restaurante</p>
+        <div class="services">
+            <p><strong>Servicios de Reserva</strong></p>
+            <ul>
+                <li>Welcome Drink de cortesía</li>
+                <li>Celebra tu cumpleaños </li>
+                <li>Vive un momento romántico</li>
+                <li>Eventos sociales</li>
+            </ul>
+        </div>
+        <div>
+            <label for="adults">Adultos</label>
+            <div class="btn">
+                <button class="btn_min_add" id="btn_adult_substract">-</button>
+                <input type="number" id="adults" value="2" min="1" max="10">
+                <button class="btn_min_add" id="btn_adult_add">+</button>
+            </div>
+        </div>
+
+        <div>
+            <label for="children">Niños (Hasta 12 años)</label>
+            <div class="btn">
+                <button class="btn_min_add" id="btn_children_substract">-</button>
+                <input type="number" id="children" value="0" min="0" max="10">
+                <button class="btn_min_add" id="btn_children_add">+</button>
+            </div>
+        </div>
+
+        <div>
+            <label for="fecha">Fecha</label>
+            <div id="date_options" class="date-options"></div>
+        </div>
+        <div>
+            <label for="horario">Escoge tu horario</label>
+            <div class="meal-options"></div>
+            <button>ALMUERZO 12:00 - 16:00</button>
+            <button>CENA 18:00 - 22:00</button>
+        </div>
+        <div>
+            <button class="continue">CONTINUAR</button>
+        </div>
+        <p class="contact">Llámenos al <a href="telefono">952999000</a> si tiene cualquier duda.</p>
+    </div>
+</body>
+<script src="clases.js"></script>
+
+</html>
