@@ -22,3 +22,22 @@ for (let i = 0; i < 6; i++) {
   //Agregar boton al div option
   dateOptionsContainer.appendChild(dateBtn);
 }
+
+
+function botonesCantidad(presionar) {
+  var cantidadAdults = document.getElementById('adults');
+  var valorAdults = parseInt(cantidadAdults.value);
+  var cantidad = document.getElementById('children');
+  var valorChildren = parseInt(cantidad.value);
+
+  if (presionar === 'addChildren' && valorChildren < cantidad.max) {
+      cantidad.value = valorChildren + 1;
+  } else if (presionar === 'subtractChildren' && valorChildren > cantidad.min) {
+      cantidad.value = valorChildren - 1;
+  }else if (presionar === 'addAdults' && valorAdults < cantidadAdults.max) {
+    cantidadAdults.value = valorAdults + 1;
+  } else if (presionar === 'subtractAdults' && valorAdults > cantidadAdults.min) { 
+    cantidadAdults.value = valorAdults - 1;
+  } 
+  return;
+}

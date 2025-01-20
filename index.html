@@ -24,21 +24,20 @@
         <div>
             <label for="adults">Adultos</label>
             <div class="btn">
-                <button class="btn_min_add" id="btn_adult_substract">-</button>
-                <input type="number" id="adults" value="2" min="1" max="10">
-                <button class="btn_min_add" id="btn_adult_add">+</button>
+                <button onclick="botonesCantidad('subtractAdults')" class="btn_min_add" id="btn_adult_substract">-</button>
+                <input type="number" id="adults" value="0" min="0" max="10">
+                <button onclick="botonesCantidad('addAdults')" class="btn_min_add" id="btn_adult_add">+</button>
             </div>
         </div>
-
         <div>
             <label for="children">Niños (Hasta 12 años)</label>
             <div class="btn">
-                <button class="btn_min_add" id="btn_children_substract">-</button>
+                <!-- onclick llama a la funcion botonesCantidad y le pasa como parametro el string 'subtractChildren' -->
+                <button onclick="botonesCantidad('subtractChildren')" class="btn_min_add" id="btn_children_substract">-</button>
                 <input type="number" id="children" value="0" min="0" max="10">
-                <button class="btn_min_add" id="btn_children_add">+</button>
-            </div>
+                <button onclick="botonesCantidad('addChildren')" class="btn_min_add" id="btn_children_add">+</button>
+            </div>            
         </div>
-
         <div>
             <label for="fecha">Fecha</label>
             <div id="date_options" class="date-options"></div>
