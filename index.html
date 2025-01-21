@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas en Restaurant</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 
 <body>
@@ -41,8 +43,15 @@
 
         <div>
             <label for="fecha">Fecha</label>
-            <div id="date_options" class="date-options"></div>
+            <div id="date_options" class="date-options">
+                <button id="open-calendar-btn">Abrir calendario</button>
+                <div id="calendar-container" class="hidden">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+            <p id="selected-date"></p>
         </div>
+
         <div>
             <label for="horario">Escoge tu horario</label>
             <div class="meal-options"></div>
