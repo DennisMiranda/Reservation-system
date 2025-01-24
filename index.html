@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas en Restaurant</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 
 <body>
@@ -40,11 +42,19 @@
         </div>
 
         <div>
-            <label for="fecha">Fecha</label>
-            <div id="date_options" class="date-options"></div>
+            <label for="open-calendar-btn">Fecha</label>
+            <div id="date_options" class="date-options">
+                <button id="open-calendar-btn">Abrir calendario</button>
+                <div id="calendar-container" class="hidden">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+            <p id="selected-date"></p>
         </div>
+
         <div>
-            <label for="horario">Escoge tu horario</label>
+            <label for="meal-options">Escoge tu horario</label>
+            <select id="meal-options" class="meal-options"></select>
             <div class="meal-options"></div>
             <button>ALMUERZO 12:00 - 16:00</button>
             <button>CENA 18:00 - 22:00</button>
@@ -54,7 +64,6 @@
         </div>
         <p class="contact">Llámenos al <a href="telefono">952999000</a> si tiene cualquier duda.</p>
     </div>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
-
 </html>
