@@ -48,3 +48,25 @@ body {
 .contact {
   margin-top: 20px;
 }
+
+.hidden {
+  display: none;
+}
+
+#calendar-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px #0000001a;
+  width: auto;
+  max-width: 308px;
+}
+
+.date-options { 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
