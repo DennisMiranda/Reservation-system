@@ -33,6 +33,26 @@ for (let i = 0; i < 4; i++) {
   dateOptionsContainer.insertBefore(dateBtn, document.getElementById('open-calendar-btn'));
 }
 
+//============================================== 
+//Botones de cantidad de personas 
+function updateValue(id, action) {
+  var element = document.getElementById(id);
+  var value = parseInt(element.value);
+  var max = parseInt(element.max);
+  var min = parseInt(element.min);
+
+  if (action === 'add' && value < max) {
+    element.value = value + 1;
+  } else if (action === 'subtract' && value > min) {
+    element.value = value - 1;
+  }
+}
+
+function handleButton(action, group) {
+  updateValue(group, action);
+}
+//==============================================
+
 function handleDateSelection(dateStr) {
   //cerramos el calendario
   calendarContainer.classList.add('hidden');

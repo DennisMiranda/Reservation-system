@@ -23,23 +23,24 @@
                 <li>Eventos sociales</li>
             </ul>
         </div>
-        <div>
-            <label for="adults">Adultos</label>
-            <div class="btn">
-                <button class="btn_min_add" id="btn_adult_substract">-</button>
-                <input type="number" id="adults" value="2" min="1" max="10">
-                <button class="btn_min_add" id="btn_adult_add">+</button>
-            </div>
-        </div>
 
         <div>
-            <label for="children">Niños (Hasta 12 años)</label>
-            <div class="btn">
-                <button class="btn_min_add" id="btn_children_substract">-</button>
-                <input type="number" id="children" value="0" min="0" max="10">
-                <button class="btn_min_add" id="btn_children_add">+</button>
-            </div>
+        <label for="adults">Adultos</label>
+        <div class="btn">
+            <button onclick="handleButton('subtract', 'adults')" class="btn_min_add" id="btn_adult_subtract">-</button>
+            <input type="number" id="adults" value="0" min="0" max="10">
+            <button onclick="handleButton('add', 'adults')" class="btn_min_add" id="btn_adult_add">+</button>
         </div>
+        </div>
+        <div>
+        <label for="children">Niños (mayores de 12 años)</label>
+        <div class="btn">
+            <button onclick="handleButton('subtract', 'children')" class="btn_min_add" id="btn_children_subtract">-</button>
+            <input type="number" id="children" value="0" min="0" max="10">
+            <button onclick="handleButton('add', 'children')" class="btn_min_add" id="btn_children_add">+</button>
+        </div>
+        </div>
+
 
         <div>
             <label for="open-calendar-btn">Fecha</label>
